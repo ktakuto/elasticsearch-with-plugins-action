@@ -26,4 +26,3 @@ runs:
     STACK_VERSION: ${{ inputs.stack-version }}
     NODES: ${{ inputs.nodes }}
     PLUGINS: ${{ inputs.plugins }}
-
