@@ -1,6 +1,6 @@
 name: 'Run Elasticsearch'
 description: 'This action spins up an Elasticsearch instance that can be accessed and used in your subsequent steps.'
-author: 'elastic'
+author: 'takuto'
 
 branding:
   icon: 'database'
@@ -17,7 +17,7 @@ inputs:
   plugins:
     description: 'Elasticsearch plugin strings'
     required: false
-    default ''
+    default: ''
 
 runs:
   using: 'docker'
@@ -26,3 +26,4 @@ runs:
     STACK_VERSION: ${{ inputs.stack-version }}
     NODES: ${{ inputs.nodes }}
     PLUGINS: ${{ inputs.plugins }}
+
